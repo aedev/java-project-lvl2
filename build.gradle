@@ -20,6 +20,11 @@ compileJava {
     options.release = 11
 }
 
+dependencies {
+    implementation 'info.picocli:picocli:4.6.1'
+    annotationProcessor 'info.picocli:picocli-codegen:4.6.1'
+}
+
 run {
     standardInput = System.in
 }
